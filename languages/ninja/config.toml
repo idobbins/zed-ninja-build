@@ -4,5 +4,3 @@ path_suffixes = ["ninja"]
 line_comments = ["# "]
 tab_size = 2
 hard_tabs = false
-brackets = [{ start = "{", end = "}", close = true, newline = false }]
-

@@ -1,9 +1,9 @@
 [
   {
     "label": "ninja target",
-    "command": "ninja -f $ZED_FILENAME $ZED_CUSTOM_target",
+    "command": "ninja",
+    "args": ["-f", "$ZED_FILENAME", "$ZED_CUSTOM_target"],
     "cwd": "$ZED_DIRNAME",
     "tags": ["ninja-target"]
   }
 ]
-
