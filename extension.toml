@@ -1,0 +1,12 @@
+id = "ninja-build"
+name = "Ninja Build"
+version = "0.0.1"
+schema_version = 1
+authors = ["Isaac Dobbins"]
+description = "Language support for Ninja build files."
+repository = "https://github.com/idobbins/zed-ninja-build"
+
+[grammars.ninja]
+repository = "https://github.com/alemuller/tree-sitter-ninja"
+rev = "0a95cfdc0745b6ae82f60d3a339b37f19b7b9267"
+

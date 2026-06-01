@@ -1,0 +1,23 @@
+ninja_required_version = 1.11
+builddir = build
+
+pool link_pool
+  depth = 2
+
+rule cc
+  command = cc -MMD -MF $out.d -c $in -o $out
+  description = CC $out
+  depfile = $out.d
+  deps = gcc
+
+rule link
+  command = cc $in -o $out
+  description = LINK $out
+  pool = link_pool
+
+build build/main.o: cc src/main.c
+build app: link build/main.o
+build all: phony app
+
+default all
+
